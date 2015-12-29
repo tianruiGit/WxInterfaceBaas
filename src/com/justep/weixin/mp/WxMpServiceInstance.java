@@ -106,7 +106,7 @@ public class WxMpServiceInstance {
 		x5Meuns.add(indexPage);
 
 		WxMenuButton demoPage = new WxMenuButton();
-		demoPage.setName("外卖");
+		demoPage.setName("SYF");
 		demoPage.setType(WxConsts.BUTTON_VIEW);
 		demoPage.setUrl("http://x5.justep.com/x5/UI2/takeout/index.w"); 
 		x5Meuns.add(demoPage);
@@ -114,8 +114,7 @@ public class WxMpServiceInstance {
 		WxMenuButton takeout = new WxMenuButton();
 		takeout.setName("外卖案例");
 		takeout.setType(WxConsts.BUTTON_VIEW);
-		takeout.setUrl("https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + this.getWxMpConfigStorage().getAppId() + "&redirect_uri=http%3A%2F%2Fx5.justep.com%2Fx5%2FUI2%2Ftakeout%2Findex.w&"
-				+ "response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect");
+		takeout.setUrl(" https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf7e99c474fcc59f7&redirect_uri=http%3A%2F%2Fbingkuaix3.imwork.net%2Fx5%2FUI2%2FWxInterface%2Fzhouyangyi%2Fzyy.w&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect");
 		System.out.println(takeout.getUrl());
 		x5Meuns.add(takeout);
 

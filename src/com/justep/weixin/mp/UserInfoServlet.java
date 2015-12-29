@@ -19,20 +19,19 @@ public class UserInfoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	WxMpServiceInstance instance = WxMpServiceInstance.getInstance();
-	
+
 	@Override
-	protected void service(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String userCode =request.getParameter("code");
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String userCode = request.getParameter("code");
 		System.out.println(userCode);
-		
+
 		WxMpOAuth2AccessToken oauth2AccessToken;
 		try {
 			oauth2AccessToken = instance.getWxMpService().oauth2getAccessToken(userCode);
 			request.getSession().setAttribute("weixinOauth2AccessToken", oauth2AccessToken);
-			WxMpUser userInfo  = instance.getWxMpService().oauth2getUserInfo(oauth2AccessToken, "zh_CN");
+			WxMpUser userInfo = instance.getWxMpService().oauth2getUserInfo(oauth2AccessToken, "zh_CN");
 			Map<String, String> map = new HashMap<String, String>();
-
+			System.out.println("1");
 			map.put("openid", oauth2AccessToken.getOpenId());
 			map.put("nickname", userInfo.getNickname());
 			map.put("country", userInfo.getCountry());
@@ -45,10 +44,10 @@ public class UserInfoServlet extends HttpServlet {
 
 			ObjectMapper objectMapper = new ObjectMapper();
 			String s = objectMapper.writeValueAsString(map);
-	        response.getWriter().write(s);
+			response.getWriter().write(s);
 		} catch (WxErrorException e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 }
