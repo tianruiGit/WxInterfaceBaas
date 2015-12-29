@@ -1,21 +1,15 @@
-<!-- <xml>
-	<appId>wx3fb4a0dd8ea0730c</appId>
-	<secret>8b568f0eb9ab3a93198fbe2b7643a14a</secret>
-	<token>justepX5Weixin</token>
-	<aesKey>m7NvTQ6OSNLC915MSDr6sXlJVsbZFJ4F7s7FfXNFnLD</aesKey>
-	<accessToken></accessToken>
-	<expiresIn></expiresIn>
-	<openId></openId>
-	<appKey>C677D6D838600001EFB0D06C33411588</appKey>
-</xml> -->
+<!-- <xml> <appId>wx3fb4a0dd8ea0730c</appId> <secret>8b568f0eb9ab3a93198fbe2b7643a14a</secret> 
+	<token>justepX5Weixin</token> <aesKey>m7NvTQ6OSNLC915MSDr6sXlJVsbZFJ4F7s7FfXNFnLD</aesKey> 
+	<accessToken></accessToken> <expiresIn></expiresIn> <openId></openId> <appKey>C677D6D838600001EFB0D06C33411588</appKey> 
+	</xml> -->
 <xml>
-	<appId>wx46f90536ac1bdea8</appId>
-	<secret>d1b318591ff0b9e1cea9a5c1f0651419</secret>
-	<token>zhuayaofang</token>
+	<appId>wxf7e99c474fcc59f7</appId>
+	<secret>d4624c36b6795d1d99dcf0547af5443d</secret>
+	<token>353637</token>
 	<aesKey></aesKey>
 	<accessToken></accessToken>
 	<expiresIn></expiresIn>
-	<openId></openId>-
+	<openId></openId>
 	<appKey></appKey>
 </xml>
 

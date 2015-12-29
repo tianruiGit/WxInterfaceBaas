@@ -63,14 +63,6 @@
 		<servlet-name>weixin userInfo</servlet-name>
 		<url-pattern>/weixin/userinfo</url-pattern>
 	</servlet-mapping>
-	<servlet>
-		<servlet-name>X5 Baas Demo Servlet</servlet-name>
-		<servlet-class>com.justep.baas.test.DemoServlet</servlet-class>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>X5 Baas Demo Servlet</servlet-name>
-		<url-pattern>/demo</url-pattern>
-	</servlet-mapping>
+
         
 </web-app>
